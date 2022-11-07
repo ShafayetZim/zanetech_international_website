@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products | Zane Tech International</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch.png" />
+
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" media="screen" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body-portfolio {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+      }
+
+      /* Center website */
+      .main-portfolio {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+
+      .row {
+        margin: 10px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        display: none; /* Hide all elements by default */
+      }
+
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Content */
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
+
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: yellowgreen;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #ddd;
+      }
+
+      .btn.active {
+        background-color: #666;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loader -->
+
+    <!-- Header -->
+
+    <header id="top" class="header-inner">
+      <div class="brand-panel">
+        <a href="#" class="brand">
+          <!-- <span class="text-primary">Zane</span>Tech -->
+          <img src="img/bg/web-logo.png" width="120px" />
+        </a>
+        <div class="brand-name">ZaneTech</div>
+      </div>
+      <div class="header-phone">Difference With Quality..</div>
+      <!-- <div class="vertical-panel-content">
+        <div class="vertical-panel-info">
+          <div class="line"></div>
+        </div>
+        <ul class="social-list">
+          <li><a href="" class="fa fa-instagram"></a></li>
+          <li><a href="" class="fa fa-twitter"></a></li>
+          <li><a href="" class="fa fa-behance"></a></li>
+          <li><a href="" class="fa fa-facebook"></a></li>
+        </ul>
+      </div> -->
+
+      <!-- Navigation Desctop -->
+
+      <nav
+        class="navbar-desctop visible-md visible-lg"
+        style="background-color: #aeb6bf"
+      >
+        <div class="container">
+          <a href="#top" class="brand js-target-scroll">
+            <img src="img/bg/web-logo.png" width="120px" />
+          </a>
+          <ul class="navbar-desctop-menu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About us</a>
+            </li>
+            <li class="active">
+              <a href="#">Working Area <i class="fa fa-angle-down"></i></a>
+              <ul>
+                <li class="active">
+                  <a href="product.html">Products</a>
+                </li>
+                <li>
+                  <a href="client.html">Clients</a>
+                </li>
+                <li>
+                  <a href="partner.html">Partners</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="service.html">Services</a>
+            </li>
+            <li>
+              <a href="achievement.html">Achievements</a>
+            </li>
+            <li>
+              <a href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Navigation Mobile -->
+
+      <nav class="navbar-mobile">
+        <a href="#top" class="brand js-target-scroll">
+          <img src="img/bg/web-logo.png" width="120px" />
+        </a>
+
+        <!-- Navbar Collapse -->
+
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar-mobile"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+          <ul class="navbar-nav-mobile">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About us</a>
+            </li>
+            <li class="active">
+              <a href="#">Working Area <i class="fa fa-angle-down"></i></a>
+              <ul>
+                <li class="active">
+                  <a href="product.html">- Products</a>
+                </li>
+                <li>
+                  <a href="client.html">- Clients</a>
+                </li>
+                <li>
+                  <a href="partner.html">- Partners</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="service.html">Services</a>
+            </li>
+            <li>
+              <a href="achievement.html">Achievements</a>
+            </li>
+            <li>
+              <a href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Layout -->
+
+    <div class="layout">
+      <!-- Home -->
+
+      <main
+        class="main main-inner main-project"
+        style="
+          background-image: url('img/bg/riphel3.jpg');
+          background-size: 100% 100%;
+        "
+        data-stellar-background-ratio="0.6"
+      >
+        <div class="container">
+          <header class="main-header">
+            <h1>Working Area</h1>
+            <div class="project-title-info">
+              <div class="project-info-item">
+                <span class="text-primary"></span>
+              </div>
+              <div class="project-info-item">
+                <span class="text-primary"></span><sup></sup>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <!-- Lines -->
+
+        <div class="page-lines">
+          <div class="container">
+            <div class="col-line col-xs-4">
+              <div class="line"></div>
+            </div>
+            <div class="col-line col-xs-4">
+              <div class="line"></div>
+            </div>
+            <div class="col-line col-xs-4">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="content">
+        <section class="project-details">
+          <div class="container">
+            <div class="project-details-item">
+              <div class="row">
+                <div class="project-details-info wow fadeInLeft">
+                  <h3 class="project-details-title">Main Products<br /></h3>
+                  <ul style="list-style-type: disc">
+                    <li>CNC Machines</li>
+                    <li>Cutting Tools</li>
+                    <li>Spare Parts of CNC Machine</li>
+                    <li>Medical equipments</li>
+                    <li>Raw-materials</li>
+                  </ul>
+                </div>
+                <div class="project-details-img col-md-8 col-md-offset-4">
+                  <img
+                    alt=""
+                    class="img-responsive"
+                    src="img/projects/all-in-one.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section class="projects section">
+          <div class="container">
+            <h2 class="section-title">
+              Our <span class="text-primary">products</span>
+            </h2>
+          </div>
+          <div class="section-content">
+            <div
+              class="projects-carousel js-projects-carousel js-projects-gallery"
+            >
+              <div class="project project-light">
+                <a href="img/projects/medical-equipment.jpg" title="project 1">
+                  <figure>
+                    <img alt="" src="img/projects/medical-equipment.jpg" />
+                    <figcaption>
+                      <h3 class="project-title">
+                        medical<br />
+                        equipments
+                      </h3>
+                      <h4 class="project-category">products</h4>
+                      <div class="project-zoom"></div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="project project-light">
+                <a
+                  href="img/projects/cnc-milling-machines.jpeg"
+                  title="project 2"
+                >
+                  <figure>
+                    <img alt="" src="img/projects/cnc-milling-machines.jpeg" />
+                    <figcaption>
+                      <h3 class="project-title">machinary<br /></h3>
+                      <h4 class="project-category">products</h4>
+                      <div class="project-zoom"></div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="project">
+                <a href="img/projects/blue-laser.jpg" title="project 3">
+                  <figure>
+                    <img alt="" src="img/projects/blue-laser.jpg" />
+                    <figcaption>
+                      <h3 class="project-title">CNC<br />machine</h3>
+                      <h4 class="project-category">products</h4>
+                      <div class="project-zoom"></div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="project">
+                <a
+                  href="img/projects/istockphoto-1009606614-612x612.jpg"
+                  title="project 4"
+                >
+                  <figure>
+                    <img
+                      alt=""
+                      src="img/projects/istockphoto-1009606614-612x612.jpg"
+                    />
+                    <figcaption>
+                      <h3 class="project-title">Lab<br />Equipments</h3>
+                      <h4 class="project-category">Products</h4>
+                      <div class="project-zoom"></div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="project">
+                <a href="img/projects/tools.jpg" title="project 5">
+                  <figure>
+                    <img alt="" src="img/projects/tools.jpg" />
+                    <figcaption>
+                      <h3 class="project-title">Tools<br /></h3>
+                      <h4 class="project-category">Products</h4>
+                      <div class="project-zoom"></div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!-- <div class="project">
+                  <a href="img/projects/6-480x880.jpg" title="project 6">
+                    <figure>
+                      <img alt="" src="img/projects/6-480x880.jpg" />
+                      <figcaption>
+                        <h3 class="project-title">
+                          Residential care<br />
+                          project in Paris
+                        </h3>
+                        <h4 class="project-category">Architecture</h4>
+                        <div class="project-zoom"></div>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div> -->
+              <!-- <div class="project">
+                  <a href="img/projects/7-480x880.jpg" title="project 7">
+                    <figure>
+                      <img alt="" src="img/projects/7-480x880.jpg" />
+                      <figcaption>
+                        <h3 class="project-title">
+                          Residential care<br />
+                          project in Paris
+                        </h3>
+                        <h4 class="project-category">Architecture</h4>
+                        <div class="project-zoom"></div>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div> -->
+              <!-- <div class="project">
+                  <a href="img/projects/8-480x880.jpg" title="project 8">
+                    <figure>
+                      <img alt="" src="img/projects/8-480x880.jpg" />
+                      <figcaption>
+                        <h3 class="project-title">
+                          Residential care<br />
+                          project in Paris
+                        </h3>
+                        <h4 class="project-category">Architecture</h4>
+                        <div class="project-zoom"></div>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer id="footer" class="footer">
+          <div class="container">
+            <div class="row-base row">
+              <div class="col-base text-left-md col-md-4">
+                <a href="#" class="brand">
+                  <img src="img/bg/Screenshot_3.png" width="150px" />
+                </a>
+              </div>
+              <div class="text-center-md col-base col-md-4">
+                <a
+                  href="https://ekattorit.com/"
+                  class="author-link"
+                  target="_blank"
+                >
+                  Develeped by:
+                  <span style="color: green"> EKATTOR</span
+                  ><span style="color: red"> iT</span>
+                </a>
+              </div>
+              <div class="text-right-md col-base col-md-4">
+                © Zane Tech International, 2022. All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Lines -->
+
+        <div class="page-lines">
+          <div class="container">
+            <div class="col-line col-xs-4">
+              <div class="line"></div>
+            </div>
+            <div class="col-line col-xs-4">
+              <div class="line"></div>
+            </div>
+            <div class="col-line col-xs-4">
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/interface.js"></script>
+
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
+</html>
