@@ -76,14 +76,16 @@
 @import url("settings.css");
 @import url("layers.css");
 @import url("navigation.css");
-
+@import url("https://fonts.cdnfonts.com/css/glacial-indifference");
 html {
   font-size: 75%;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font-family: "montserratlight", sans-serif;
+  font-family: "Glacial Indifference";
+  font-weight: normal;
+  font-style: normal;
   font-size: 1em;
   line-height: 1.65;
   color: #747474;
@@ -590,7 +592,7 @@ label.error {
   top: 0;
   width: 39.47vmin;
   height: 13.2vmin;
-  padding: 4.8vmin 2em 4.8vmin;
+  /* padding: 4.8vmin 2em 4.8vmin; */
   background-color: transparent;
   text-align: center;
   -webkit-transition: all 0.3s;
@@ -1019,7 +1021,7 @@ label.error {
 .main-inner {
   position: relative;
   z-index: 1;
-  min-height: 0;
+  /* min-height: 0; */
   padding: 33.7vmin 0 17vmin;
 }
 
@@ -1072,7 +1074,6 @@ label.error {
   z-index: 2;
   color: #fff;
   text-align: right;
-  padding-left: 38.5vmin;
 }
 
 .main-header h1 {
@@ -1202,13 +1203,13 @@ label.error {
 /* ------------------------------------------------------------------------------- */
 
 .bg-about {
-  background: url(../img/bg/freighter.jpg) 50% 0 no-repeat;
-  background-size: cover;
+  background: url(../img/slider/9.jpg) 50% 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 .bg-service {
-  background: url(../img/bg/military.jpg) 50% 0 no-repeat;
-  background-size: cover;
+  background: url(../img/bg/riphel2.jpg) 50% 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 .entry {
@@ -1818,7 +1819,7 @@ img.mfp-img {
 }
 
 .clients-list .client img {
-  opacity: 0.2;
+  /* opacity: 0.2; */
   display: block;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -2069,8 +2070,8 @@ img.mfp-img {
 /* ------------------------------------------------------------------------------- */
 
 .bg-contacts {
-  background: url(../img/bg/cargo-ships.jpg) 50% 0 no-repeat;
-  background-size: cover;
+  background: url(../img/bg/tank-field.jpg) 50% 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 .contacts .fade-title-right {
